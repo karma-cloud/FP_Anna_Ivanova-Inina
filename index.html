@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<script src="./js/scripts.js"></script>
 <body>
 	<header id="header" class="header">
 		<div class="container">
@@ -133,13 +134,15 @@
 			</div>
 		</div>
 
-		<form>
+		<form id="feedbackForm">
 			<fieldset>
 				<legend>Send me letter</legend>
-				<p><input type="text" id="name" placeholder="Your Name*"></p>
-				<p><input type="email" id="email" placeholder="Your E-mail*"></p>
-				<textarea id="comments" placeholder="Type your message"></textarea>
-				<button type="submit">Send</button>
+				<p><input type="text" id="firstName" name="firstName" placeholder="First name*"  required></p>
+				<p><input type="text" id="lastName" name="lastName" placeholder="Last name*" required></p>
+				<p><input type="email" id="email" name="email" placeholder="example@example.com" required></p>
+				<p><input type="tel" id="phone" name="phone" placeholder="+X(XXX)XX-XX-XXX"></p>
+				<textarea id="message" name="message" placeholder="Type your message" required></textarea>
+				<button type="button" onclick="validateAndSubmit()">Send</button>
 			</fieldset>
 		</form>
 	</section>
