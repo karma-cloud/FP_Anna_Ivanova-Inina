@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:  1.5vw;
+}
+
+.container {
+    max-width: 90vw;
+    text-align: center;
+}
+
+button {
+    margin-top: 3vh;
+    margin-left: 5vw;
+    color: white;
+    background-color: black;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 30px;
+}
+button:hover{
+    color: lightgray;
+}
+
+input{
+    height: 2.5vw;
+    margin-left: 1.4vw;
+    width: 22vw;
+    border-radius: 10px;
+    border-color:#FFC6A9;
+}
+#weatherInfo {
+    margin-top: 5vh;
+}
