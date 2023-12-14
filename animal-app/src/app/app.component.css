@@ -1,0 +1,41 @@
+.animal-list {
+    margin-bottom: 20px;
+    background-color: #FFFBF9;
+   border:0.5px solid #F4712C;
+   align-content: center;
+}
+
+.animal-list span{
+  font-size:  1.5vw;
+
+}
+
+.animal-list span:hover{
+  color: lightgray;
+}
+
+#selectedAnimal{
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size:  1.5vw;
+}
+
+button{
+  color: black;
+  background-color: #ffcf9f;
+  width: 14vw;
+  height: 8vh;
+  border-radius: 30px;
+  border-color: #F4712C;
+  font-size:  1.5vw;
+}
+
+button:hover{
+  color: whitesmoke;
+}
+
+
+.hidden {
+    display: none;
+}
+

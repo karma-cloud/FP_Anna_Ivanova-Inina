@@ -1,0 +1,18 @@
+<div class="animal-list">
+  <div *ngFor="let animal of filteredAnimals()">
+    <span (click)="showDetails(animal)">{{ animal.type }} - {{ animal.name }}</span>
+  </div>
+</div>
+
+<button (click)="toggleCats()">{{ showCats ? 'Скрыть котиков' : 'Показать котиков' }}</button>
+
+<div *ngIf="selectedAnimal" id="selectedAnimal">
+  <div *ngIf="showDetailsFor(selectedAnimal)">
+    <h2>Информация о {{ selectedAnimal.name }}</h2>
+    <p>Тип: {{ selectedAnimal.type }}</p>
+    <p>Имя: {{ selectedAnimal.name }}</p>
+    <p>Возраст: {{ selectedAnimal.age }} года(лет)</p>
+    <p>Цвет: {{ selectedAnimal.color }}</p>
+    <p>Звук: {{ selectedAnimal.sound }}</p>
+  </div>
+</div>
